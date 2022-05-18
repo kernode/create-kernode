@@ -1,11 +1,16 @@
 {
   "name": "create-kernode",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Create new kernode template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "templates/**/*",
+    "index.js",
+    "createDirectoryContents.js"
+  ],
   "type": "module",
   "bin": {
     "create-kernode": "./index.js"

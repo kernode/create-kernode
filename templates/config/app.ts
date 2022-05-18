@@ -4,5 +4,5 @@ export default {
   /** server configuration */
   socketEnable: Env.get('SOCKET', 'on') == 'on' ? true : false,
   serverPort: Env.get('PORT', 3000),
-  rateLimit: 60,
+  rateLimit: Env.get('RATE_LIMIT' || 60),
 }

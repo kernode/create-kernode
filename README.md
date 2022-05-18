@@ -1,6 +1,10 @@
-# Kernode
+# Kernode 
 
 - Slim Node js framework with typescript
+
+## Collaborator are welcome 
+
+- Fork repository and create PR to develop branch
 
 `npm init kernode`
 
@@ -113,6 +117,10 @@ let users = await User.query().where('id', 1)
 - `Storage.store(file)` path(string)
 
 - `Storage.getStream(path, res)` StreamObject
+
+### Production 
+
+- `npm run build && npm run serve`
 
 ### TODO
 

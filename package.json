@@ -1,6 +1,6 @@
 {
   "name": "create-kernode",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Create new kernode template",
   "main": "index.js",
   "scripts": {

@@ -1,4 +1,4 @@
-const fs = require('fs')
+import * as fs from 'fs'
 const CURR_DIR = process.cwd()
 
 const createDirectoryContents = (templatePath, newProjectPath) => {
@@ -30,4 +30,4 @@ const createDirectoryContents = (templatePath, newProjectPath) => {
   })
 }
 
-module.exports = createDirectoryContents
+export default createDirectoryContents

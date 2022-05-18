@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
   "bin": {
     "create-kernode": "./index.js"
   },
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/kernode/kernode#readme",
   "dependencies": {
+    "@babel/core": "^7.17.12",
     "inquirer": "^8.2.4"
   }
 }

@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 
-const inquirer = require('inquirer')
-const fs = require('fs')
-const createDirectoryContents = require('./createDirectoryContents.js')
+import inquirer from 'inquirer'
+import * as fs from 'fs'
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
+import createDirectoryContents from './createDirectoryContents.js'
 const CURR_DIR = process.cwd()
-const basePath = process.cwd()
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
 const QUESTIONS = [
   {
     name: 'project-name',
@@ -19,9 +22,8 @@ const QUESTIONS = [
 ]
 
 inquirer.prompt(QUESTIONS).then((answers) => {
-  const projectChoice = answers['project-choice']
   const projectName = answers['project-name']
-  const templatePath = `${basePath}/templates/${projectChoice}`
+  const templatePath = `${__dirname}/templates`
 
   fs.mkdirSync(`${CURR_DIR}/${projectName}`)
 

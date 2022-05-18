@@ -7,7 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "templates/**/*",
+    "templates/app/**/*",
+    "templates/bootstrap/**/*",
+    "templates/config/**/*",
+    "templates/routes/**/*",
+    "templates/views/**/*",
+    "templates/.env",
+    "templates/.env.example",
+    "templates/.gitignore",
+    "templates/main.ts",
+    "templates/nodemon.json",
+    "templates/package.json",
+    "templates/tsconfig.json",
     "index.js",
     "createDirectoryContents.js"
   ],

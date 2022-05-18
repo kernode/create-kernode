@@ -1,6 +1,8 @@
+import Env from '@kernode/core/Env'
+
 export default {
   /** server configuration */
-  socketEnable: true,
-  serverPort: 8000,
+  socketEnable: Env.get('SOCKET', 'on') == 'on' ? true : false,
+  serverPort: Env.get('PORT', 3000),
   rateLimit: 60,
 }

@@ -10,7 +10,7 @@ export default {
       port: parseInt(Env.get('DB_PORT', '3306')),
       user: Env.get('DB_USER', 'root'),
       password: Env.get('DB_PASSWORD', 'password'),
-      database: Env.get('DB_NAME', 'sellfies'),
+      database: Env.get('DB_NAME', 'butterfly'),
     },
   },
 }

@@ -31,8 +31,16 @@ inquirer.prompt(QUESTIONS).then((answers) => {
 
   console.log('◕ Running npm install...')
 
-  exec(`cd ${projectName} && npm install`, (error, stdout) => {
+  exec(`cd ${projectName} && npm install`, (error, stdout, stderr) => {
+    if (error) {
+      console.log(`ERROR -> ${error.message}`)
+      return
+    }
+    if (stdout) {
+      console.log(`${stderr}`)
+    }
     console.log('\x1b[32m✓ Successfully created Kernode project')
     console.log(`\x1b[33mcd ${projectName} && npm run dev`)
+    return
   })
 })

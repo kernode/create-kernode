@@ -1,0 +1,31 @@
+{
+  "name": "kernode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "NODE_ENV=production node -r ts-node/register/transpile-only -r tsconfig-paths/register ./.build/main.js",
+    "dev": "NODE_ENV=development nodemon",
+    "build": "tsc && minimize-js ./.build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@kernode/core": "^1.0.26",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.13",
+    "@types/express-fileupload": "^1.2.2",
+    "@types/fs-extra": "^9.0.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/mime-types": "^2.1.1",
+    "@types/node": "^17.0.33",
+    "@types/uuid": "^8.3.4",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.7.0",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.6.4"
+  }
+}

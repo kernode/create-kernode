@@ -1,6 +1,6 @@
 {
   "name": "create-kernode",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Create new kernode template",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,8 @@
     "templates/package.json",
     "templates/tsconfig.json",
     "index.js",
-    "createDirectoryContents.js"
+    "createDirectoryContents.js",
+    "README.md"
   ],
   "type": "module",
   "bin": {
